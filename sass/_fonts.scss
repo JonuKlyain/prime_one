@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas.woff2') format('woff2'),
+        url('../fonts/Bebas.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AkzidenzGroteskBQ';
+    src: url('../fonts/AkzidenzGroteskBQ-BdCnd.woff2') format('woff2'),
+        url('../fonts/AkzidenzGroteskBQ-BdCnd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin reg {
+    font-family: PT Sans, sans-serif;
+    font-weight: 400;
+}
+
+@mixin bebas {
+    font-family: Bebas, sans-serif;
+    font-weight: 400;
+}
+@mixin bq {
+    font-family: AkzidenzGroteskBQ, sans-serif;
+    font-weight: 400;
+}
+
+

@@ -1,0 +1,89 @@
+.products
+    margin: 0 0 40px 0
+    // .products__column
+    &__column
+        flex: 0 1 25%
+        margin: 0 0 40px 0
+
+.container
+
+.products-body
+    display: flex
+.products-item
+    display: flex
+    flex-direction: column
+    height: 100%
+    p
+        padding: 0 5px
+    // .products-item__image
+    &__image
+        display: block
+        padding: 0 0 103.5% 0
+        margin: 0 0 22px 0
+    // .products-item__title
+    &__title
+        display: block
+        max-width: 185px
+        height: 50px
+        overflow: hidden
+        padding: 0 5px
+        color: $text-color
+        +bq
+        font-size: 25px
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 2.5px
+        margin: 0 0 26px 0
+    &__text
+        flex: 1 1 auto
+        max-width: 195px
+        padding: 0 5px
+        color: $text-color
+        font-size: 15px
+        line-height: 25px
+        margin: 0 0 30px 0
+    // .products-item__btn
+    &__btn
+        margin: 0 0 20px 0
+    // .products-item__link
+    &__link
+        // Style for "View menus"
+        color: $text-color
+        +bebas
+        font-size: 15px
+        line-height: 25px
+        text-decoration: underline
+        text-transform: uppercase
+        letter-spacing: 1.5px
+
+.btn
+
+@media (max-width: 767px)
+    .products
+        margin: 0 0 0 0
+        // .products__column
+        &__column
+            flex: 0 1 50%
+        .products-body
+            flex-wrap: wrap
+@media (max-width: 380px)
+    .products
+        // .products__column
+        &__column
+            flex: 0 1 100%
+            margin: 0 0 30px 0
+        .products-body
+            flex-wrap: wrap
+        .products-item
+            &__title
+                max-width: none
+                height: auto
+                overflow: visible
+                margin: 0 0 20px 0
+            &__text
+                max-width: none
+                margin: 0 0 15px 0
+            &__btn
+                margin: 0 0 15px 0
+            &__image
+                margin: 0 0 10px 0

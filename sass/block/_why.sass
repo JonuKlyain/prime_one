@@ -1,0 +1,117 @@
+.why
+
+.why-top
+    display: flex
+    background-color: $text-color
+    // .why-top__column
+    &__column
+        flex: 0 0 50%
+    // .why-top__text
+    &__text
+        color: $white
+        +bq
+        text-align: right
+        font-size: 50px
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 5px
+        padding: 55px 60px 55px 0
+    &__image
+        height: 100%
+
+.why-body-row
+    display: flex
+    flex-wrap: wrap
+
+.why-body
+    background-color: #ebebeb
+    padding: 50px 0 0 0
+    // .why-body__column
+    &__column
+        flex: 0 0 50%
+        padding: 0 0 50px 0
+    // .why-body__item
+    &__item
+        display: flex
+
+.why-body-item
+    // .why-body-item__icon
+    &__icon
+        display: flex
+        justify-content: center
+        align-items: center
+        flex: 0 0 100px
+        height: 100px
+        background-color: $text-color
+    
+.why-body-item-body
+    flex: 1 1 100%
+    padding: 0 0 0 11px
+    display: flex
+    flex-direction: column
+    // .why-body-item-body__title
+    &__title
+        flex: 1 1 auto
+        +bq
+        padding: 0 15px 0 0
+        font-size: 25px
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 2.5px
+    // .why-body-item-body__text
+    &__text
+        padding: 0 15px 0 0
+        font-size: 15px
+        line-height: 25px
+
+@media (max-width: 1000px)
+    .why-top
+        &__column
+            flex: 0 0 100%
+            &:last-child
+                display: none
+    .why-top
+        &__text
+            padding: 30px 0
+            font-size: 40px
+            text-align: center
+
+@media (max-width: 768px)
+    .why-top
+        &__text
+            padding: 20px 0
+            font-size: 20px
+            text-align: center
+    
+    .why-body
+        // .why-body__column
+        &__column
+            flex: 0 0 100%
+@media (max-width: 440px)
+    .why-body-item-body
+        &__title
+            flex: 1 1 auto
+            +bq
+            padding: 0 15px 0 0
+            font-size: 20px
+            line-height: 25px
+            text-transform: uppercase
+            letter-spacing: 2.5px
+        // .why-body-item-body__text
+        &__text
+            padding: 0 15px 0 0
+            font-size: 12px
+            line-height: 15px
+    .why-body-item
+        &__icon
+            flex: 0 0 80px
+            height: 80px
+            padding: 15px
+            img
+                max-width: 100%
+    .why-body
+        padding: 30px 0 0 0
+        // .why-body__column
+        &__column
+            padding: 0 0 30px 0
+            

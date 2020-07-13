@@ -1,0 +1,94 @@
+.contacts-top
+
+.container
+
+.contacts
+    padding: 70px 0 0 0
+    // .contacts__title
+    &__title
+        +bq
+        font-size: 50px
+        text-transform: uppercase
+        letter-spacing: 5px
+        margin: 0 0 30px 0
+.contacts-body
+    display: flex
+    flex-wrap: wrap
+    // .contacts-body__column
+    &__column
+        flex: 0 0 50%
+    // .contacts-body__item
+    &__item
+        font-size: 15px
+        line-height: 27px
+        padding: 0 0 0 35px
+        color: $text-color
+        margin: 0 0 20px 0
+        &--1
+            background: url('../img/contacts/icons/001.svg') left no-repeat
+        &--2
+            background: url('../img/contacts/icons/003.svg') left no-repeat
+            display: block
+        &--3
+            display: block
+            background: url('../img/contacts/icons/002.svg') left no-repeat 
+
+
+
+.contacts-social
+    // .contacts-social__item
+    &__item
+        margin: 0 30px 0 0 
+        &:last-child
+            margin: 0
+
+
+.contacts-content
+    background: $text-color 50%
+    display: flex
+    position: relative
+    // .contacts-content__column
+    &__column
+        flex: 0 0 50%
+    // .contacts-content__map
+    &__map
+        position: absolute
+        top: 0
+        left: 0
+        width: 50%
+.contacts-content-form
+    padding: 55px 60px
+    // .contacts-content-form__title
+    &__title
+        +bq
+        color: $white
+        font-size: 25px
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 2.5px
+        margin: 0 0 25px 0
+    &__btn
+
+
+.contacts-content-form-body
+    max-width: 375px
+.contacts-content-form-line
+    margin: 0 0 25px 0
+@media (max-width: 767px)
+    .contacts
+        padding: 20px 0 0 0
+        &__title
+            font-size: 25px
+            text-align: center
+            margin: 0 0 15px 0
+    .contacts-content
+        display: block
+        &__map
+            top: 100%
+            width: 100%
+        &-form
+            padding: 30px
+    .contacts-body
+        margin: 0 0 10px 0
+        &__column
+            flex: 0 0 100%

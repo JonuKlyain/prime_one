@@ -1,0 +1,241 @@
+.header
+    padding: 29px 0 33px 0
+    background-color: $white
+    // position: relative
+.container
+
+.header-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+    // .header-top__link
+    &__link
+        font-size: 15px
+        text-transform: uppercase
+        +bq
+        color: $text-color
+        text-decoration: underline
+.header-top-lang
+    display: flex
+    justify-content: space-between
+    // .header-top-lang__item
+    &__item
+        display: block
+        line-height: 19px
+        font-size: 12px 
+        text-transform: uppercase
+        color: $text-color
+        +bebas
+        letter-spacing: 1px
+        padding: 0 4px
+        margin: 0 10px 0 0 
+        &.active
+            background-color: $text-color
+            color: $white
+
+
+.header-bottom
+    display: flex
+    align-items: center
+    margin-top: -20px
+
+    // .header-bottom__column
+    &__column
+        flex: 0 0 33.333%
+        
+
+.header-bottom-menu
+    &--right
+        .header-bottom-menu-list
+            display: flex
+            justify-content: flex-end
+    // .header-bottom-menu__link
+    &__link
+        color: $text-color
+        +bq
+        font-size: 15px
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 1.5px
+
+.header-bottom-menu-list
+    display: flex
+    li
+        margin: 0 45px 0 0 
+        &:last-child
+            margin-right: 0
+.header-logo
+    display: block
+    text-align: center
+    // .header-logo__text
+    &__text
+        color: $text-color
+        +bebas
+        font-size: 8px
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 8px
+    // .header-logo__image
+    &__image
+        // display: inline-block
+        margin: 3px 0 20px 0
+
+
+@media (max-width: 1000px)
+
+    .header-bottom-menu-list
+        li
+            margin: 0 25px 0 0 
+
+
+@media (max-width: 767px)
+
+    .header
+        padding: 18px 0 0 0
+
+    // .header__body
+    &__body
+
+    // .header__burger
+    &__burger
+
+    .container
+
+    .header-top
+        justify-content: flex-end      
+        margin: 13px 0 0 0 
+        // .header-top__link
+        &__link
+            position: relative
+            z-index: 10
+
+    .header-top-lang
+        justify-content: flex-start
+        margin: 50px 0 15px 0
+        // .header-top-lang__item
+        &__item
+
+
+    .active
+
+    .header-bottom
+        margin-top: -45px
+        // .header-bottom__column
+        &__column
+
+
+    .header-bottom-menu
+        
+        // .header-bottom-menu__link
+        &__link
+
+    .header-bottom-menu
+        &--right
+            .header-bottom-menu-list
+                display: block
+                li
+                    margin: 0 0 15px 0
+                    &:last-child
+                        margin: 0 0 0 0
+    .header-bottom-menu-list
+        display: block
+        li
+            margin: 0 0 15px 0
+    .header-logo
+        position: relative
+        z-index: 10
+        // .header-logo__text
+        &__text
+            
+        // .header-logo__image
+        &__image
+            margin: 2px 0 5px 0
+            img
+                width: 150px
+
+    .header-bottom-menu--right
+
+        
+    // бургер меню
+
+    .header-menu
+        position: fixed
+        width: 100%
+        height: 100%
+        overflow: auto
+        top: 0
+        left: -120%
+        background-color: $white
+        padding: 50px 15px 20px 15px
+        transition: all 0.8s ease 0s
+        z-index: 1
+        &.active 
+            left: 0
+
+
+
+
+    body.lock
+        overflow: hidden
+    .header__body
+    .header__burger
+        display: block
+        position: absolute
+        top: 28px
+        left: 15px
+        width: 30px
+        height: 20px
+        z-index: 3
+    .header__burger span
+        position: absolute
+        background-color: $text-color
+        width: 100%
+        height: 2px
+        left: 0
+        top: 9px
+        transition: all 0.3s ease 0s
+    .header__burger:before,
+    .header__burger:after
+        content: ''
+        background-color: $text-color
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        transition: all 0.6s ease 0s
+    .header__burger:before
+        top: 0
+    .header__burger:after
+        bottom: 0
+    .header__burger.active span
+        transform: scale(0)
+    .header__burger.active:before
+        transform: rotate(45deg)
+        top: 9px
+    .header__burger.active:after
+        transform: rotate(-45deg)
+        bottom: 9px
+
+    // бургер меню
+
+    .header-menu
+
+@media (max-width: 450px)
+    .header-logo
+        // .header-logo__text
+        &__text
+            letter-spacing: 5px
+        // .header-logo__image
+        &__image
+            img
+                width: 100px
+    .header-top        
+        margin: 13px 0 0 0 
+        // .header-top__link
+        &__link
+            // padding: 20px 0 0 0
+            font-size: 13px
+    .header-bottom
+        margin-top: -43px
+        // .header-bottom__column
